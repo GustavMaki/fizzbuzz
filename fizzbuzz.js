@@ -1,13 +1,16 @@
 
 for(var i = 1; i < 21 ; i++){
-    
+
+    var res;
     var fizz = i / 3;
     var buzz = i / 5;
 
-    if(Number.isInteger(fizz) && Number.isInteger(buzz)) console.log("fizzbuzz");
+    if(Number.isInteger(fizz) && Number.isInteger(buzz)) res = "fizzbuzz";
 
-    else if(Number.isInteger(fizz)) console.log("fizz");
-        else if(Number.isInteger(buzz)) console.log("buzz");
+    else if(Number.isInteger(fizz)) res = "fizz";
+        else if(Number.isInteger(buzz)) res = "buzz";
         
-    else console.log(i);
+    else res = i;
+
+    console.log(res);
 }
