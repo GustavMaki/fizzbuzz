@@ -6,7 +6,7 @@ for(var i = 1; i < 21 ; i++){
 
     if(Number.isInteger(fizz) && Number.isInteger(buzz)) console.log("fizzbuzz");
 
-    if(Number.isInteger(fizz)) console.log("fizz");
+    else if(Number.isInteger(fizz)) console.log("fizz");
         else if(Number.isInteger(buzz)) console.log("buzz");
         
     else console.log(i);
